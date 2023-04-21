@@ -31,7 +31,16 @@ class sortings{
         }
 
         void insertion_sort(int a[], int n){ //have more practical use
-
+            int i, j, item;
+            for(int i=1;i<n;i++){
+                item = a[i];
+                j = i-1;
+                while(j>=0 & a[j]>item){
+                    a[j+1] = a[j];
+                    j = j-1;
+                }
+                a[j+1] = item;
+            }
         }
 };
 
@@ -40,11 +49,11 @@ int main() {
 	cin>>n;
 	int arr[n];
 	for(int i=0;i<n;i++){
-		cin>>arr[i];
+        cin>>arr[i];
 	}
 	sortings ob;
-	ob.bubble_sort(arr, n);
+	ob.insertion_sort(arr, n);
 	for(int i=0;i<n;i++){
-		cout<<arr[i]<<" ";
+        cout<<arr[i]<<" ";
 	}
 }
