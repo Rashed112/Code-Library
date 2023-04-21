@@ -4,20 +4,20 @@ using namespace std;
 
 class sortings{
 	public:
-		void selection_sort(int a[], int n){
-			int i, j, index_min;
-			for(i=0;i<n-1;i++){
-				index_min = i;
-				for(j=i+1;j<n;j++){
-					if(a[j]<a[index_min]){
-						index_min = j;
-					}
-				}
-				if(index_min != i){
-					swap(a[i], a[index_min]);
-				}
-			}
-		}
+        void selection_sort(int a[], int n){
+            int i, j, index_min;
+            for(i=0;i<n-1;i++){
+                index_min = i;
+                for(j=i+1;j<n;j++){
+                    if(a[j]<a[index_min]){
+                        index_min = j;
+                    }
+                }
+                if(index_min != i){
+                    swap(a[i], a[index_min]);
+                }
+            }
+        }
 
         void bubble_sort(int a[], int n){
             int i, j, temp;
@@ -31,7 +31,7 @@ class sortings{
         }
 
         void insertion_sort(int a[], int n){ //have more practical use
-            
+
         }
 };
 
