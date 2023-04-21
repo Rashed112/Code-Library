@@ -29,10 +29,6 @@ class sortings{
                 }
             }
         }
-
-        void insertion_sort(int a[], int n){ //have more practical use
-            
-        }
 };
 
 int main() {
